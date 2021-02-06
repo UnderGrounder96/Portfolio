@@ -36,7 +36,6 @@ collections:
       - { name: company, label: Company, widget: string }
       - { name: position, label: Position, widget: string }
       - { name: date, label: Date, widget: string }
-      - { name: image, label: Image, widget: image }
       - {
           name: desc,
           label: Description,
