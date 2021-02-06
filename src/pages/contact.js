@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 
 const ContactPage = () => {
   return (
-    <Layout>
+    <Layout page="Contact">
       <section className="contact-page">
         <article className="contact-form">
           <h3>Get in touch</h3>
@@ -17,7 +17,7 @@ const ContactPage = () => {
               <input
                 type="text"
                 name="name"
-                placeholder="name"
+                placeholder="your name"
                 className="form-control"
                 required
               />
