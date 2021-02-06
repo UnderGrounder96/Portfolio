@@ -10,8 +10,6 @@ const ContactPage = () => {
           <h3>Get in touch</h3>
           <form
             name="contact"
-            rel="noreferrer noopener"
-            target="_blank"
             method="post"
             netlify
           >

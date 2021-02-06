@@ -6,6 +6,8 @@
   "license": "SEE LICENSE IN LICENSE",
   "main": "n/a",
   "private": true,
+  "homepage": "https://lucio-afonso-portfolio.netlify.app",
+  "repository": "github:UnderGrounder96/portfolio",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",

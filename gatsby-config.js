@@ -10,7 +10,7 @@ module.exports = {
     description: `This WebDev Portfolio Site that uses Strapi and GatsbyJS.`,
     author: `Lucio Afonso`,
     twitterUsername: `@UnderGrounder96`,
-    siteUrl: "http://127.0.0.1:9000",
+    siteUrl: "https://lucio-afonso-portfolio.netlify.app",
     social: [
       {
         name: `linkedin`,
