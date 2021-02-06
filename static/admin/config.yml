@@ -1,0 +1,63 @@
+---
+backend:
+  name: git-gateway # test-repo, during develop.
+  repo: undergrounder96/portfolio
+  branch: main
+
+publish_mode: editorial_workflow
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: project
+    label: Project
+    folder: _posts/project
+    create: true
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: desc, label: Description, widget: text }
+      - { name: url, label: URL, widget: string }
+      - { name: git_url, label: Git_URL, widget: string }
+      - { name: image, label: Image, widget: image }
+      - { name: featured, label: Featured, widget: boolean, default: false }
+      - {
+          name: stack,
+          label: Stack,
+          widget: list,
+          min: 1,
+          allow_add: true,
+          field: { label: Name, name: name, widget: string },
+        }
+  - name: job
+    label: Job
+    folder: _posts/job
+    create: true
+    fields:
+      - { name: company, label: Company, widget: string }
+      - { name: position, label: Position, widget: string }
+      - { name: date, label: Date, widget: string }
+      - { name: image, label: Image, widget: image }
+      - {
+          name: desc,
+          label: Description,
+          min: 1,
+          widget: list,
+          allow_add: true,
+          field: { label: Name, name: name, widget: string },
+        }
+  - name: about
+    label: About
+    folder: _posts/about
+    create: true
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: info, label: Information, widget: text }
+      - { name: image, label: Image, widget: image }
+      - {
+          name: stack,
+          label: Stack,
+          min: 1,
+          widget: list,
+          allow_add: true,
+          field: { label: Name, name: name, widget: string },
+        }
